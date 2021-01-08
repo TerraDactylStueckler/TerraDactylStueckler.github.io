@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam&display=swap");
+
+body{
+    background-color: #153B50  ;
+    font-family: "Kufam";
+}
+header{
+    background-color:#68B0AB ;
+    height: 150px;
+}
+nav a:hover{
+    background-color: white;
+}
+nav a{
+    color:#68B0AB;
+    font-size:  1.1em;
+    font-weight: bold;
+}
+h2{
+    color: white;
+}
+li{
+    color: white;
+}
+footer{
+   background-color:#68B0AB;
+   height: 55px;
+   text-align: center;
+   margin-top: 200px;
+   margin-left:100px;
+   margin-right: 100px;
+}
+img{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+   
+}
+p a{
+    color:black;
+}
+p a:hover{
+    background-color: white;
+}
