@@ -18,9 +18,13 @@ nav a{
 }
 h2{
     color: white;
+    grid-column: 1/2;
+    grid-row:2/4;
 }
 li{
     color: white;
+    grid-column:1/2;
+    grid-row: 2/3;
 }
 footer{
    background-color:#68B0AB;
@@ -44,4 +48,16 @@ p a{
 }
 p a:hover{
     background-color: white;
+}
+.home-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-gap: 0.5em;
+}
+
+.title-name{
+    grid-column: 2/4;
+    grid-row: 1;
+    margin-top: 60 px;
 }
