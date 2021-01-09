@@ -18,6 +18,8 @@ header{
     height: 150px;
     margin-left: 100px;
     border-radius: 10px;
+    grid-row: 1;
+    grid-column: 1/4;
 }
 img{
     float: right;
@@ -38,7 +40,8 @@ h2{
     clear: both;
     margin-top: -300px;
     margin-bottom: 200px;
-    margin-left: 100px;
+    margin-left: 120px;
+    text-decoration: underline;
 }
 
 nav a:hover{
@@ -49,9 +52,9 @@ nav a{
     font-size:  1.1em;
     font-weight: bold;
     grid-column: 1/4;
-    font-size: 1.0em;
+    grid-row: 2/3;
     margin-left:100px;
-    margin-top: 10px;
+    
 }
 
 .assignment-box{
@@ -68,7 +71,8 @@ li{
     grid-row: 4/5;
     margin-top: 10px;
     margin-left: 5px;
-    margin-right: 200px;
+    font-size: 1.1em;
+    
     clear: both;
 }
 .bottom-grid{
@@ -87,7 +91,7 @@ footer{
    grid-row:1/2;
    margin-bottom: 500px;
    padding-top: 5px;
-   padding-bottom: 10px;
+   padding-bottom: 30px;
 }
 
 
