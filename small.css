@@ -1,15 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Kufam&display=swap") ;
-
 .home-grid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: 1fr; 
     grid-gap: 0.5em;
 }
 
 body{
     background-color: white  ;
-    font-family: "Kufam";
+    font-family: "Kufam", sans-serif;
     max-width: 870px;
     max-height: 300px;
 }
@@ -45,7 +43,7 @@ h2{
 }
 
 nav a:hover{
-    background-color: rgb(15, 59, 155);
+    background-color: #68B0AB;
 }
 nav a{
     color: #153b50;
