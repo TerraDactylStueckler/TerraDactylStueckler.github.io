@@ -15,9 +15,9 @@ header h1{
     margin:0;
 }
 header h2{
-margin: 0;
+    margin: 0;
 }
-
+ 
 /*nav rules here*/
 nav {background-color: #111;}
 nav ul {margin: 0; padding: 0;}
