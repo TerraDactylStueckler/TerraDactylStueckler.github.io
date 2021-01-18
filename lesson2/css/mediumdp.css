@@ -1,0 +1,12 @@
+@media only screen and (min-width: 560px){
+    .note-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .content{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+
+    
+} 
