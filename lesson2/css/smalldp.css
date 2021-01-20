@@ -13,7 +13,7 @@ body{
 
 header{
     background-color: #511783;
-    height: 100px;
+    height: 110px;
     border-radius: 10px;
     margin-bottom: 25px;
 }
@@ -23,7 +23,14 @@ h1, h2{
     margin-left: 15px;
     text-align: center;
 }
-
+ h2{
+     padding:0px;
+ }
+.site-name{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
 .note-card{
     display: grid;
     grid-template-columns: 1fr;
@@ -63,6 +70,8 @@ h1, h2{
 .note-card-title{
     background-color: #511783;
     height: 60px;
+    text-align: center;
+    padding-top: 15px;
 }
 
 h3{
@@ -82,4 +91,6 @@ footer{
     border-radius: 10px;
     margin-bottom: 25px;
     text-align: center;
+    color:white;
+    padding-top: 5px;
 }
