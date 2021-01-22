@@ -52,13 +52,14 @@ h2{
 nav a:hover{
     background-color: #68B0AB;
 }
-nav a{
+nav ul li a{
     color: #153b50;
     font-size:  1.1em;
     font-weight: bold;
-    grid-column: 1/4;
+    grid-column: 1/2;
     grid-row: 2/3;
-    margin-left:100px;
+    margin-left: 20px;
+    text-align: left;
     
 }
 
