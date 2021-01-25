@@ -12,6 +12,7 @@ header{
     padding: .5rem 2%;
     background-color:  #4784b6 ;
     text-align: center;
+    font-size: 50px;
 
 }
 nav {
@@ -27,7 +28,7 @@ nav ul li a {
     color: #eee;
     padding: .5rem 0;
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 30px;
     text-align: center;
 }
 nav ul li a:hover {
@@ -42,22 +43,31 @@ h2{
     padding: .5rem 2%;
     background-color:  #4784b6 ;
     text-align: center;
+    font-size: 40px;
 }
+.main{
+    margin-left: 500px;
+    margin-bottom: 30px;
+}
+.columns, .sitenametable, .h1table, .h2table, .h3table, .navtable, .paratable, .bottomtable{
+    background-color: #CA5310;
+    color: #FEECD7;
+    height: 60px;
+    width: 300px;
+}
+.columns{
+    font-size: 30px;
+    text-align: center;
+}
+.navtable, .sitenametable, .h1table, .h2table, .h3table, .paratable, .bottomtable{
+    padding-left: 30px;
+}
+
 footer{
     padding: .5rem 2%;
     background-color:  #4784b6 ;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
