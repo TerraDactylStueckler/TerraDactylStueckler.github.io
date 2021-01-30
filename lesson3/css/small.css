@@ -1,43 +1,52 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #FEECD7;
-    font-size: 20px;
+    font-size: 25px;
 
 }
 header{
     padding: .5rem 2%;
     background-color:  #4784b6 ;
     text-align: center;
-    font-size: 50px;
+    display: flex;
+    flex-flow: column;
+}
 
+h1{
+    font-size: 60px;
 }
 nav {
     background-color: #CA5310;
-    display: flex;
-    justify-content: center;
+    
 }
 
 nav ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    
 }
 nav ul li a {
     display: block;
     color: black;
     padding: .5rem 0;
     text-decoration: none;
-    font-size: 30px;
-   
+    font-size: 25px;
+    flex-basis: 100%;
 }
 nav ul li a:hover {
     background-color: rgb(141, 168, 226);
     color: #333;
 }
+
 nav ul li.active a {
     background-color: rgb(224, 158, 71);
     color: #fff;
@@ -54,6 +63,7 @@ h3{
 p{
     margin-left: 60px;
     margin-right: 60px;
+    font-size: 20px;
 }
 img{
     margin-left: 60px;
