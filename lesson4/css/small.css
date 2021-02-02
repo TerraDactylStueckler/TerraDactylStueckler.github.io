@@ -13,15 +13,23 @@ header{
     background-color:  #4784b6 ;
     text-align: center;
     font-size: 50px;
+}
 
+.motto{
+    font-size: 10px;
 }
 img{
     display:flex;
     margin-left: 20px;
     margin-bottom: 10px;
     flex-direction: column;
-    
-    
+}
+h1{
+    font-size: 100px;
+}
+.motto{
+    font-size: 20px;
+    padding-bottom: 40px;
 }
 nav {
     background-color: #CA5310;
@@ -52,6 +60,11 @@ nav ul li.active a {
     background-color: rgb(224, 158, 71);
     color: #fff;
 }
+
+nav ul.hide{
+    display: none;
+}
+
 h2{
     padding: .5rem 2%;
     background-color:  #4784b6 ;
@@ -64,13 +77,23 @@ h3{
 p{
     margin-left: 60px;
     margin-right: 60px;
-    font-size: 25px;
+    font-size: 30px;
+}
+
+.contact, .article, .summary, .forecast{
+    
+    border-top: 5px solid #CA5310;
+    border-bottom: 5px solid #CA5310;
+    background-color: rgb(224, 158, 71);
+    padding: 1rem;
+    margin: 1rem 0;
 }
 
 footer{
     padding: .5rem 2%;
     background-color:  #4784b6 ;
     text-align: center;
+
 }
 
 

@@ -2,25 +2,26 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1">
         <meta name="description" content="A page to help you plan your events around the weather">
         <title>Weather For Your Events</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
-        <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body> 
         <header class="clearfix">
-            <p class="title-1"><h1>Your Event's Weather</h1></p>
+            <h1>Your Event's Weather</h1>
             <img src="images/sun_cloud.png" alt="Sun and Cloud drawing">
-            <p>We'll check the weather for <strong>YOU</strong>!</p>
+            <div class="motto">We'll check the weather for <strong>YOU</strong>!</div>
         </header>
-        <nav>
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="">Preston</a></li>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="">Preston</a></li>
                 <li><a href="">Soda Springs</a></li>
                 <li><a href="">Fish Haven</a></li>
                 <li><a href="">Storm Center</a></li>
@@ -29,18 +30,17 @@
         </nav>
         <main>
             <h2>Preston, Idaho</h2>
-            <div class= "content">Some Such Thing</div>
-            <div class= "content">Some Such Thing</div>
-            <div class= "content">Some Such Thing</div>
-            <div class= "content">Some Such Thing</div>
+            <div class= "summary">Hero/Weather Summary</div>
+            <div class= "forecast">5 Day Forecast</div>
+            <div class= "article">Article</div>
+            <div class= "contact">Contact Us</div>
 
         </main>
         <footer>
-            <p class="bottom"> &copy; |Tara Stueckler |</p>
+            <p class="bottom"> &copy; 2021 |Tara Stueckler |</p>
             <span id="lastUpdate"> Last Updated:</span>
-            <script src ="js.js">
-                 
-            </script>
+            <script src="js/js.js"></script>
+            <script src="js/button.js"></script>
         </footer>
 
     </body>
