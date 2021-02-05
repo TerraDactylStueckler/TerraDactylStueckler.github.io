@@ -18,11 +18,13 @@ header{
 .motto{
     font-size: 10px;
 }
-img{
+header img{
     display:flex;
     margin-left: 20px;
     margin-bottom: 10px;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 h1{
     font-size: 1rem;
@@ -89,12 +91,17 @@ p{
     background-color: rgb(224, 158, 71);
     padding: 1rem;
     margin: 1rem 0;
+    width: 75rem;
+    margin:auto;
+    margin-bottom: 15px;
 }
 
 footer{
     padding: .5rem 2%;
     background-color:  #4784b6 ;
     text-align: center;
+    width: 75rem;
+
 
 }
 
