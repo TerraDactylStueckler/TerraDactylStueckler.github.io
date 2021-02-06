@@ -6,32 +6,30 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #FEECD7;
     font-size: 20px;
-
 }
 header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     padding: .5rem 2%;
     background-color:  #4784b6 ;
     text-align: center;
     font-size: 50px;
 }
 
-.motto{
-    font-size: 10px;
-}
 header img{
-    display:flex;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width:80px;
+  height: auto;
 }
 h1{
-    font-size: 1rem;
+    font-size: 1.6rem;
+    padding-left: 10px;
 }
 .motto{
-    font-size: 20px;
+    font-size: .9rem;
     padding-bottom: 40px;
+    font-style: italic;
+    margin-left: 20px;
 }
 nav {
     background-color: #CA5310;
@@ -54,7 +52,7 @@ nav ul li a {
     color: black;
     padding: .5rem 0;
     text-decoration: none;
-    font-size: 30px; 
+    font-size: 1rem; 
 }
 nav ul li a:hover {
     background-color: rgb(141, 168, 226);
@@ -68,6 +66,7 @@ nav ul li.active a {
 nav ul.hide{
     display: none;
 }
+
 
 h2{
     padding: .5rem 2%;
@@ -100,9 +99,7 @@ footer{
     padding: .5rem 2%;
     background-color:  #4784b6 ;
     text-align: center;
-    width: 75rem;
-
-
+    
 }
 
 
