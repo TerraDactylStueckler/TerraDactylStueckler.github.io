@@ -15,9 +15,11 @@
     <body> 
         <header class="clearfix">
             <img src="images/sun_cloud.png" alt="Sun and Cloud drawing">
-            <h1>Your Event's Weather</h1>
-            <div class="motto">We'll check the weather for <strong>YOU</strong>!</div>
-        </header>
+            <section>
+                <h1>Your Event's Weather</h1>
+                <div class="motto">We'll check the weather for <strong>YOU</strong>!</div>
+            </section>
+            </header>
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;Menu</button>
             <ul id="primaryNav" class="hide">
@@ -31,9 +33,52 @@
         </nav>
         <main>
             <h2>Preston, Idaho</h2>
-            <div class= "summary">Hero/Weather Summary</div>
-            <div class= "forecast">5 Day Forecast</div>
-            <div class= "article">Article</div>
+            <div class= "summary">
+                <figure>
+                    <img src="images/landscape.jpg" alt="Mountains & Lake" width="800" >
+                </figure> 
+                <section class="stats">
+                    <h3>Weather Summary</h3>
+                    <p>Current:<br>High:<br>Low:<br>Wind:</p>
+                </section>
+            </div>
+            <div class= "forecast">
+                <h3>5 Day Forecast</h3>
+                <section class="forecast">
+                    <div>
+                        <h5>Monday</h5>
+                        <img src="images/sun.png" alt="Sun">
+                        <p>75&deg;</p>
+                    </div>
+                    <div>
+                        <h5>Tuesday</h5>
+                        <img src="images/clouds.png" alt="Clouds">
+                        <p>55&deg;</p>
+                    </div>
+                    <div>
+                        <h5>Wednesday</h5>
+                        <img src="images/clouds.png" alt="Clouds">
+                        <p>50&deg;</p>
+                    </div>
+                    <div>
+                        <h5>Thursday</h5>
+                        <img src="images/sun.png" alt="Sun">
+                        <p>79&deg;</p>
+                    </div>
+                    <div>
+                        <h5>Friday</h5>
+                        <img src="images/rain.png" alt="Rain">
+                        <p>46&deg;</p>
+                    </div>
+
+
+                </section>
+            </div>
+            <div class= "article"> 
+                <figure>
+                    <img src="images/tentsandmountains.jpg" alt="Tents & Mountains" width="300" height="220">
+                </figure>
+            </div>
             <div class= "contact">Contact Us</div>
 
         </main>

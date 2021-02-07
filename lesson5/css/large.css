@@ -1,6 +1,10 @@
 @media only screen and (min-width: 75rem) {
 
-    header, nav, main, footer {
+    header, nav{
+        margin:auto;
+     
+    }
+    main, footer {
         margin:auto;
     }
 
@@ -19,5 +23,8 @@
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3) ;
         padding: .6rem 1rem;
+    }
+    img.summary{
+        width: 100%;
     }
 }

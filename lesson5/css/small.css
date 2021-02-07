@@ -8,29 +8,28 @@ body{
     font-size: 20px;
 }
 header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     padding: .5rem 2%;
     background-color:  #4784b6 ;
     text-align: center;
     font-size: 50px;
 }
 
-.motto{
-    font-size: 10px;
-}
 header img{
-    display:flex;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width:80px;
+    height: auto;
 }
 h1{
-    font-size: 1rem;
+    font-size: 1.6rem;
+    padding-left: 10px;
 }
 .motto{
-    font-size: 20px;
+    font-size: .9rem;
     padding-bottom: 40px;
+    font-style: italic;
+    margin-left: 20px;
 }
 nav {
     background-color: #CA5310;
@@ -74,16 +73,47 @@ h2{
     text-align: center;
     font-size: 40px;
 }
-h3{
-    margin-left: 40px;
+main figure img.summary{
+    width: 100%;
+    height: auto;
+    padding: 5x;
+    position: relative;
+}
+main figure{
+    margin: 0;
+    width: 100%;
+}
+h3.summary{
+    background-color: rgb(224, 158, 71);
+}
+.stats{
+    position:absolute;
+    width: 15%;
+    margin-left: 3rem;
+    margin-top: -29rem;
+    background-color:  rgb(224, 158, 71);
+    padding: 1.5rem;
+    opacity: .8;
+    
+}
+p.stats{
+    font-size: 1rem;
+    margin-right: 20px;
 }
 p{
     margin-left: 60px;
     margin-right: 60px;
     font-size: 30px;
 }
+.forecast{
+    text-align: center;
+    font-size: 2rem;
+}
+section.forecast{
+    display: none;
+}
 
-.contact, .article, .summary, .forecast{
+.contact{
     
     border-top: 5px solid #CA5310;
     border-bottom: 5px solid #CA5310;

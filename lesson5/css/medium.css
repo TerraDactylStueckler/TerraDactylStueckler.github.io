@@ -26,7 +26,19 @@
     
     
     /*----------- MAIN --------------*/
-    
+    section.forecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    section.forecast div{
+        text-align: center;
+        border: 1px solid black;
+    }
+    section.forecast div h5{
+        background-color: #eee;
+        margin: 0;
+        padding: 1rem 0;
+    }
     
     
     /*----------- FOOTER --------------*/
