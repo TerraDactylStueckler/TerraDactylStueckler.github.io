@@ -27,4 +27,17 @@
     img.summary{
         width: 100%;
     }
+    .container0{
+        position: relative;
+    }
+    .stats{
+        position:absolute;
+        width: 15%;
+        margin-left: 3rem;
+        margin-top: -29rem;
+        background-color:  rgb(224, 158, 71);
+        padding: 1.5rem;
+        opacity: .8;
+    }
+
 }

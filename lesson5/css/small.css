@@ -73,11 +73,14 @@ h2{
     text-align: center;
     font-size: 40px;
 }
+main{
+    display: block;
+    padding: 17em 2%;
+}
 main figure img.summary{
     width: 100%;
     height: auto;
-    padding: 5x;
-    position: relative;
+   
 }
 main figure{
     margin: 0;
@@ -87,14 +90,13 @@ h3.summary{
     background-color: rgb(224, 158, 71);
 }
 .stats{
-    position:absolute;
-    width: 15%;
-    margin-left: 3rem;
-    margin-top: -29rem;
     background-color:  rgb(224, 158, 71);
     padding: 1.5rem;
     opacity: .8;
-    
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px black;
+    font-size: 15pt;
 }
 p.stats{
     font-size: 1rem;
@@ -112,7 +114,18 @@ p{
 section.forecast{
     display: none;
 }
+img.article{
+    /*margin-left: 10px;
+    */
+    width: 35%;
+  float: right;
+  margin: 0 0 .5rem .5rem;
+}
+section.article{
+    clear: both;
+    font-size: .5rem;
 
+}
 .contact{
     
     border-top: 5px solid #CA5310;

@@ -35,11 +35,20 @@
         border: 1px solid black;
     }
     section.forecast div h5{
-        background-color: #eee;
+        background-color: rgb(141, 168, 226);
         margin: 0;
         padding: 1rem 0;
     }
-    
+    img.article{
+        float: right;
+    }
+    .stats {
+        position: absolute;
+        width: 15%;
+        margin-left: 4rem;
+        margin-top: -22rem;
+        font-size: 12pt;
+      }
     
     /*----------- FOOTER --------------*/
         
