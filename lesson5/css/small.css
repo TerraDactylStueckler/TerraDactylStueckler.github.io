@@ -81,6 +81,23 @@ main img {
     width: 100%;
     height: auto;
 }
+section#message {
+    background-color:crimson;
+}
+section.showme{
+    display: block;
+}
+section.hideme{
+    display: none;
+}
+
+#message h4, p{
+    color:antiquewhite;
+    text-align: center;
+}
+h4{
+    font-size: 3rem;
+}
 h3.stats{
     text-align: center;
 }

@@ -13,6 +13,11 @@
         <link rel="shortcut icon" href="images/sunfavicon.ico">
     </head>
     <body> 
+        <section id="message">
+            <h4>Coming Saturday!</h4>
+            <p>Preston Pancakes in the Park! 9 A.M. at the City Park Pavillion.</p>
+            <p>Come enjoy great food & fun! See you there.</p>
+      </section>
         <header class="clearfix">
             <img src="images/sun_cloud.png" alt="Sun and Cloud drawing">
             <section>
@@ -109,7 +114,20 @@
             <span id="lastUpdate"> Last Updated:</span>
             <script src="js/js.js"></script>
             <script src="js/button.js"></script>
-        </footer>
+            <script>
+                const today= new Date();
+                console.log(today);
+                const dayNumber = today.getDay();
+                console.log(dayNumber);
+                const element = document.getElementById("message");
+                if(dayNumber == 6){
+                    element.classList.add("showme");
+                }
+                else{
+                    element.classList.add("hideme");
+                }
+            </script
+        </footer
 
     </body>
     </html>
