@@ -91,7 +91,7 @@ section.hideme{
     display: none;
 }
 
-#message h4, p{
+#message h4 {
     color:antiquewhite;
     text-align: center;
 }
