@@ -41,10 +41,10 @@
             <div class="clearfix">
                 <div>
                     <figure>
-                    <img src="images/rsz_landscape.jpg" alt="Mountains & Lake" width="900" height="460px">
+                    <img src="images/rsz_landscape.jpg" alt="Mountains & Lake" width="900" height="460">
                     </figure>
                     <section class="stats">
-                     <h3>Weather Summary</h3>
+                     <h3 class="summarytitle">Weather Summary</h3>
                         <p>Current:<br>High:<br>Low:<br>Wind:</p>
                     </section>
                 </div>
@@ -120,7 +120,7 @@
                 const dayNumber = today.getDay();
                 console.log(dayNumber);
                 const element = document.getElementById("message");
-                if(dayNumber == 6){
+                if(dayNumber == 5){
                     element.classList.add("showme");
                 }
                 else{

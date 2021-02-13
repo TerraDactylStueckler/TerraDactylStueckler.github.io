@@ -99,12 +99,13 @@ h4{
     font-size: 3rem;
 }
 h3.stats{
-    text-align: center;
+    text-align: left;
 }
 h3{
     margin-left: 100px;
     font-size: 30px;
 }
+
 .stats{
     background-color:  rgb(224, 158, 71);
     padding: 1.5rem;
