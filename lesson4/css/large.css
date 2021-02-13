@@ -8,10 +8,7 @@
         padding-left: 10px;
     }
 
-    nav button{
-        display:none;
-    }
-
+   
     nav ul.hide{
         display: block;
     }

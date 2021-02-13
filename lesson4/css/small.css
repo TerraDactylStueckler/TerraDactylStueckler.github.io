@@ -33,8 +33,6 @@ h1{
 }
 nav {
     background-color: #CA5310;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     clear: both;
 }
