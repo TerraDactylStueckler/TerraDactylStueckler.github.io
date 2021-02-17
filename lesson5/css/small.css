@@ -76,6 +76,9 @@ div.taraweather.section{
     top: 5px;
     left: 5px;
 }
+div.taraweather figure{
+    margin: 0;
+}
 main {
     padding: .2rem 2%;
     max-width: 60rem;  
