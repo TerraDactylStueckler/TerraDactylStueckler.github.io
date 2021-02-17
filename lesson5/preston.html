@@ -29,7 +29,7 @@
             <button onclick="toggleMenu()">&#9776;Menu</button>
             <ul id="primaryNav" class="hide" >
                 <li><a href="">Home</a></li>
-                <li class="active"><a href="lesson4">Preston</a></li>
+                <li class="active"><a href="lesson5">Preston</a></li>
                 <li><a href="">Soda Springs</a></li>
                 <li><a href="">Fish Haven</a></li>
                 <li><a href="">Storm Center</a></li>
@@ -39,7 +39,7 @@
         <main>
             <h2>Preston, Idaho</h2>
             <div class="clearfix">
-                <div>
+                <div class="taraweather">
                     <figure>
                     <img src="images/rsz_landscape.jpg" alt="Mountains & Lake" width="900" height="460">
                     </figure>
@@ -114,19 +114,7 @@
             <span id="lastUpdate"> Last Updated:</span>
             <script src="js/js.js"></script>
             <script src="js/button.js"></script>
-            <script>
-                const today= new Date();
-                console.log(today);
-                const dayNumber = today.getDay();
-                console.log(dayNumber);
-                const element = document.getElementById("message");
-                if(dayNumber == 5){
-                    element.classList.add("showme");
-                }
-                else{
-                    element.classList.add("hideme");
-                }
-            </script>
+            <script src="js/banner.js"></script>
         </footer>
 
     </body>
