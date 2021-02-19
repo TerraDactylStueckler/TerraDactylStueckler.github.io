@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1">
+        <meta name="description" content="Lazy Load Assignment">
+        <title>The Lazy Load</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/lazy.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>A Lazy Load Example</h1>
+        </header>
+        <main>
+            <picture>
+                <img src= "https://via.placeholder.com/300/400" data-src="https://picsum.photos/300/400/" alt="Random Image" width="300" height="400">
+            </picture>
+            <picture>
+                <img src="https://via.placeholder.com/300/400" data-src="https://placeimg.com/300/400/people" alt="Human Image" width="300" height="400">
+            </picture>
+            <picture>
+                <img src="https://via.placeholder.com/300/400" data-src="https://placeimg.com/300/400/nature" alt="Nature Image" width="300" height="400">
+            </picture>
+            <picture>
+                <img src="https://via.placeholder.com/300/400" data-src="https://picsum.photos/300/400/" alt="Random Image" width="300" height="400">
+            </picture>
+            <picture>
+                <img src="https://via.placeholder.com/300/400" data-src="https://placeimg.com/300/400/animals" alt="Animal Image" width="300" height="400">
+            </picture>
+
+        </main>
+        <footer>
+            <p>&copy; <span id="copyYear"></span> | Tara Stueckler | Wyoming | <a href ="https://www.byui.edu/online">
+                BYUI Online Learning</a></p>
+        </footer>
+        <script src="lazy.js"></script>
+    </body>
+</html>

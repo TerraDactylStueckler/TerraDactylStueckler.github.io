@@ -1,0 +1,22 @@
+main{
+    display: grid;
+    justify-content: center;
+}
+
+img[data-src]{
+    filter: blur(0.5em);
+}
+img{
+    margin-top: 25px;
+    box-shadow: 0 0 20px green;
+}
+header, footer{
+    background-color: indianred;
+    text-align: center;
+}
+footer{
+    margin-top: 25px;
+}
+header{
+    padding: 10px;
+}
