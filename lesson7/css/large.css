@@ -42,6 +42,12 @@
         display: block;
         text-align: center;
       }
+      .gallery img:hover{
+         box-shadow: 0em 0em 2em green; 
+      }
+      .maingallery{
+          max-width: 1300px;
+      }
 
     footer{
         width: 75rem;

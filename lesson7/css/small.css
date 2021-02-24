@@ -153,6 +153,17 @@ section.article{
 .divgallery figure{
     margin:auto;
 }
+.gallery img{
+    margin: 2rem auto;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10%;
+    box-sizing: border-box;
+    border: 2px solid green;
+    justify-content: center;
+    align-content: center;
+
+}
 figcaption{
     display: none;
     margin: 0;
