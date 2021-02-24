@@ -65,6 +65,9 @@
     img.contact{
         float:left;
     }
+    .divgallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
     
     
     /*----------- FOOTER --------------*/

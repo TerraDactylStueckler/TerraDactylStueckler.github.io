@@ -32,6 +32,16 @@
     section.article h3{
         font-size: 30px;
     }
+    .divgallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .divgallery figure{
+        margin: auto;
+    }
+    figcaption {
+        display: block;
+        text-align: center;
+      }
 
     footer{
         width: 75rem;

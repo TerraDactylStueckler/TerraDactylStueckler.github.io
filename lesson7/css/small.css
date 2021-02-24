@@ -144,7 +144,19 @@ section.article{
     font-size: .5rem;
 
 }
-
+.divgallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+}
+.divgallery figure{
+    margin:auto;
+}
+figcaption{
+    display: none;
+    margin: 0;
+}
 .contact{
     width: 50%;
 }
