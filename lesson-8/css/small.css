@@ -194,11 +194,16 @@ form label.sbs{
 }
 form label.sbs input {
     margin: 0.25rem 0.75rem 0 0;
-  }
+}
 form div.formdiv {
-    margin: 5px 0 1px 0;
-  }
-  
+    margin: 5px 0 5px 0;
+}
+form label.selection{
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+    margin: 3px;
+}
 form input.submitBtn{
     border: none;
     background-color: #035f22;

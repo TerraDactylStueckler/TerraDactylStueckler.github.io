@@ -54,9 +54,9 @@
                         <label class="sbs"><input type="checkbox" name="tornado" value="yes">Tornado</label>
                     <div class="formdiv">Storm Severity:<em>(slide to severity level)</em> &nbsp;&nbsp;&nbsp;
                            <label class="slider" for="sslider"></label>
-                        <input type="range" id="sslider" name="slifeRange" value="5" min="1" max="10" list="tickmarks"
-                            step="1" oninput="adjustSlider(this.value)">
-                            <span id="sliderValue"></span>
+                        <input type="range" id="sslider"  value="5" min="1" max="10" list="tickmarks"
+                            step="1" oninput="adjustSlider(this.value)" onchange="adjustSlider(this.value)">
+                            <span id="sliderValue">5</span>
                             <datalist id="tickmarks">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -77,6 +77,11 @@
                             <option value="preston">Preston</option>
                             <option value="sodasprings">Soda Springs</option></select>
                         </label>
+                    <div class="formdiv">Are You in Danger?<em>(Choose one)</em>&nbsp;&nbsp;&nbsp;</div>
+                        <label class="selection"><input type="radio" name="danger" value="yes">Yes</label>
+                        <label class="selection"><input type="radio" name="danger" value="no">No</label>
+                        <label class="selection"><input type="radio" name="danger" value="maybe">Maybe</label>
+                        
                 </fieldset>   
                 <fieldset>
                     <legend>Additional Comments</legend>
