@@ -233,7 +233,9 @@ form label.slider span{
     max-width: 40rem;
     width: 96%;
 }
-
+textarea{
+    width: 96%;
+}
 
 
 
