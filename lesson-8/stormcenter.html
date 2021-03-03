@@ -44,11 +44,11 @@
                 </fieldset>
                 <fieldset>
                     <legend>Storm Report</legend>
-                    <div class="formdiv">Date of Storm</div>
+                    <div class="formdiv">Date of Storm:</div>
                         <label class="top">
                             <input type="date" name="stormDate">
                         </label>
-                    <div class="formdiv">Storm Characteristics</div>
+                    <div class="formdiv">Storm Characteristics:</div>
                         <label class="top"><select name="characteristics">
                             <option value="">Please Select&#9662;</option>
                             <option value="Flood">Flood</option>
@@ -58,11 +58,11 @@
                             <option value="Tornado"></option>Tornado</select>
                             </label>
                         
-                    <div class="formdiv">Storm Severity:<em>(slide to severity level)</em> &nbsp;&nbsp;&nbsp;
-                           <label class="slider" for="sslider"></label>
-                        <input type="range" id="sslider"  value="5" min="1" max="10" list="tickmarks"
-                            step="1" oninput="adjustSlider(this.value)" onchange="adjustSlider(this.value)">
-                            <span id="sliderValue">5</span>
+                    <div class="formdiv">
+                           <label class="slider" for="rating">Storm Severity:<em>(slide to severity level)</em> &nbsp;&nbsp;&nbsp;
+                                <input type="range" id="rating"  value="5" min="1" max="10"step="1" list="tickmarks"
+                                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" >
+                            <span id="ratingvalue">1</span>
                             <datalist id="tickmarks">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -75,8 +75,9 @@
                                 <option value="9">9</option>
                                 <option value="10">10</option>
                             </datalist>
+                        </label>
                     </div>
-                        <div class="formdiv">Storm Region</div>
+                        <div class="formdiv">Storm Region:</div>
                             <label class="top"> <select name="storm">
                             <option value="">Please Select&#9662;</option>
                             <option value="fishhaven">Fish Haven</option>

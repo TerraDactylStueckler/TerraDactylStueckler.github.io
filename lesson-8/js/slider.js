@@ -1,3 +1,3 @@
-function adjustSlider(sslider){
-    document.getElementById("sliderValue").innerHTML=sslider;
+function adjustSlider(rating){
+    document.getElementById("ratingrvalue").innerHTML= rating;
 }
