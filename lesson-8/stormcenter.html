@@ -44,8 +44,8 @@
                 </fieldset>
                 <fieldset>
                     <legend>Storm Report</legend>
-                    <div class="formdiv">Date of Storm:</div>
-                        <label class="top">
+                    <div class="formdiv"></div>
+                        <label class="top">Date of Storm:
                             <input type="date" name="stormDate">
                         </label>
                     <div class="formdiv">Storm Characteristics:</div>
@@ -62,7 +62,7 @@
                            <label class="slider" for="rating">Storm Severity:<em>(slide to severity level)</em> &nbsp;&nbsp;&nbsp;
                                 <input type="range" id="rating"  value="5" min="1" max="10"step="1" list="tickmarks"
                                     oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" >
-                            <span id="ratingvalue">1</span>
+                            <span id="ratingvalue">2</span>
                             <datalist id="tickmarks">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -92,10 +92,10 @@
                 </fieldset>   
                 <fieldset>
                     <legend>Additional Comments</legend>
-                        <label for="tArea" class="top"></label>
+                        <label for="tArea" class="top">
                             <textarea name="comments" id="tArea" cols="100" rows="6"
                              placeholder="Additional Information or comments"></textarea>
-                        
+                        </label>
                 </fieldset>  
                 <input type="submit" value="Send Info" class="submitBtn">
             </form>
