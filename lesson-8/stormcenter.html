@@ -45,13 +45,19 @@
                 <fieldset>
                     <legend>Storm Report</legend>
                     <div class="formdiv">Date of Storm</div>
-                        <label class="top"><input type="date" name="stormDate"></label>
+                        <label class="top">
+                            <input type="date" name="stormDate">
+                        </label>
                     <div class="formdiv">Storm Characteristics</div>
-                        <label class="sbs"><input type="checkbox" name="flood" value="yes">Flash Flood</label>
-                        <label class="sbs"><input type="checkbox" name="hail" value="yes">Hail</label>
-                        <label class="sbs"><input type="checkbox" name="hurricane" value="yes">Hurricane</label>
-                        <label class="sbs"><input type="checkbox" name="thunderstorm" value="yes">Thunderstorm</label>
-                        <label class="sbs"><input type="checkbox" name="tornado" value="yes">Tornado</label>
+                        <label class="top"><select name="characteristics">
+                            <option value="">Please Select&#9662;</option>
+                            <option value="Flood">Flood</option>
+                            <option value="Hail">Hail</option>
+                            <option value="Hurricane">Hurricane</option>
+                            <option value="Thunderstorm">Thunderstorm</option>
+                            <option value="Tornado"></option>Tornado</select>
+                            </label>
+                        
                     <div class="formdiv">Storm Severity:<em>(slide to severity level)</em> &nbsp;&nbsp;&nbsp;
                            <label class="slider" for="sslider"></label>
                         <input type="range" id="sslider"  value="5" min="1" max="10" list="tickmarks"
