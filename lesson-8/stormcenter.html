@@ -48,8 +48,8 @@
                         <label class="top">Date of Storm:
                             <input type="date" name="stormDate">
                         </label>
-                    <div class="formdiv"></div>
-                        <label class="top">Storm Characteristics:<select name="characteristics">
+                    <div class="formdiv">Storm Characteristics:</div>
+                        <label class="top"><select name="characteristics">
                             <option value="">Please Select&#9662;</option>
                             <option value="Flood">Flood</option>
                             <option value="Hail">Hail</option>
@@ -60,7 +60,7 @@
                         
                     <div class="formdiv">
                            <label class="slider" for="rating">Storm Severity:<em>(slide to severity level)</em> &nbsp;&nbsp;&nbsp;
-                                <input type="range" id="rating"  value="5" min="1" max="10" step="1" list="tickmarks"
+                                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
                                     oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" >
                             <span id="ratingvalue">2</span>
                             <datalist id="tickmarks">
@@ -92,9 +92,9 @@
                 </fieldset>   
                 <fieldset>
                     <legend>Additional Comments</legend>
-                    
+                    <label>
                         <textarea  class="top" for="tArea" name="comments" id="tArea" cols="100" rows="6" placeholder="Additional Information or comments:"></textarea>
-                    
+                    </label>
                 </fieldset>  
                 <input type="submit" value="Send Info" class="submitBtn">
             </form>
