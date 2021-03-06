@@ -1,0 +1,82 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FEECD7;
+    font-size: 20px;
+}
+h1{
+    background-color: rgb(50, 148, 50);
+    text-align: center;
+    font-size: 80px;
+    padding: .5rem 2%;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+.card div{
+    width: 11rem;
+}
+.cards img{
+    margin: 2rem auto;
+    max-width: auto;
+    width: 300%;
+    border-radius: 30%;
+    box-sizing: border-box;
+    border: 2px solid green;
+    justify-content: center;
+    align-content: center;
+}
+.cards section {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    height: 40rem;
+    width: 25rem;
+    padding: 0 1rem .5rem 1rem;
+    background-color: rgb(13, 63, 9);
+    overflow: hidden;
+    color: white;
+    border-radius: 10px;
+    -webkit-box-shadow:
+        rgba(16, 196, 46, 0.66) 0 30px 60px 0,
+        inset rgb(219, 206, 17) 0 0 0 5px,
+        inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+        box-shadow:
+        rgba(17, 70, 17, 0.66) 0 15px 30px 0,
+        inset rgb(16, 131, 12) 0 0 0 5px,
+        inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+}
+section:hover{
+    background-color: rgb(90, 71, 46);
+}
+p.birthDate{
+margin-top: 10px;
+}
+h2{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 1rem 0 1rem 0;
+}
+
+
+@media only screen and (min-width: 43rem){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+@media only screen and (min-width: 75rem){
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+.clearfix:after {
+    content: "";
+    clear: both;
+  }
