@@ -1,0 +1,42 @@
+@media only screen and (min-width: 75rem) {
+
+    header, nav, main, footer {
+        margin:auto;
+    }
+    h1{
+        font-size: 3rem;
+        padding-left: 10px;
+    }
+
+   
+    nav ul.hide{
+        display: block;
+    }
+
+    nav ul li{
+        float:left;
+    }
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3) ;
+        padding: .6rem 1rem;
+    }
+    .stats{
+        position:absolute;
+        margin-left: 3rem;
+        margin-top: -29rem;
+        background-color:  rgb(224, 158, 71);
+        padding: 1.5rem;
+        opacity: .8;
+    }
+    section.article h3{
+        font-size: 30px;
+    }
+    form label.sbs{
+        padding: .4rem 0;
+    }
+
+    footer{
+        width: 75rem;
+    }
+}
