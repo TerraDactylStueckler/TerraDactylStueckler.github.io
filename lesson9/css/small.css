@@ -31,6 +31,7 @@ h1{
     font-style: italic;
     margin-left: 20px;
 }
+/*--------NAV--------*/
 nav {
     background-color: #CA5310;
 }
@@ -85,6 +86,7 @@ main img {
     width: 100%;
     height: auto;
 }
+/*------BANNER------*/
 section#message {
     background-color:crimson;
 }
@@ -98,7 +100,7 @@ section.hideme{
     color:antiquewhite;
     text-align: center;
 }
-
+/*------WEATHER STATS------*/
 h3.stats{
     text-align: center;
 }
@@ -124,6 +126,7 @@ p{
     margin-right: 20px;
     font-size: 30px;
 }
+/*------5 DAY FORECAST------*/
 .forecast{
     text-align: center;
     font-size: 2rem;
@@ -144,16 +147,67 @@ section.article{
     font-size: .5rem;
 
 }
+/*------GALLERY------*/
+.divgallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-gap:10px;
+}
+.divgallery figure{
+    margin:auto;
+}
+.gallery img{
+    margin: 2rem auto;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10%;
+    box-sizing: border-box;
+    border: 2px solid green;
+    justify-content: center;
+    align-content: center;
 
+}
+figcaption{
+    display: none;
+    margin: 0;
+}
+/*------HOME PAGE------*/
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 0 auto;
+    border-radius: 12px;
+    text-align: center;
+}
+.cards section{
+    padding: 10px;
+    background-color:rgb(224, 158, 71);
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+.cards h2{
+    margin-top: 5px;
+}
+.cards h4{
+    margin: 0.5em 0;
+}
+.cards img{
+    margin-top: 15px;
+    border-radius: 12px;
+}
 .contact{
     width: 50%;
 }
-
+/*------FOOTER------*/
 footer{
     padding: .5rem 2%;
     background-color:  #4784b6 ;
     text-align: center;   
 }
+/*------FORM------*/
 form fieldset{
     margin: 2rem 0;
     border: 1px solid #445ba9;

@@ -65,6 +65,17 @@
     img.contact{
         float:left;
     }
+    /*------GALLERY------*/
+    .divgallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maingallery{
+        max-width: 800px;
+    }
+    /*------HOME PAGE------*/
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
     
     
     /*----------- FOOTER --------------*/

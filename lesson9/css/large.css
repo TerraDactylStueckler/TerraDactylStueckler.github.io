@@ -32,10 +32,32 @@
     section.article h3{
         font-size: 30px;
     }
+    /*------GALLERY------*/
+    .divgallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .divgallery figure{
+        margin: auto;
+    }
+    figcaption {
+        display: block;
+        text-align: center;
+      }
+      .gallery img:hover{
+         box-shadow: 0em 0em 2em green; 
+      }
+      .maingallery{
+          max-width: 1300px;
+      }
     form label.sbs{
         padding: .4rem 0;
     }
+    /*------HOME PAGE------*/
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
 
+    }
     footer{
         width: 75rem;
     }
