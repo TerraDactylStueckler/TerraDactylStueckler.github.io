@@ -181,6 +181,8 @@ figcaption{
     margin: 0 auto;
     border-radius: 12px;
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1em ;
 }
 .cards section{
     padding: 10px;
@@ -194,9 +196,14 @@ figcaption{
 .cards h4{
     margin: 0.5em 0;
 }
-.cards img{
-    margin-top: 15px;
+.cards section img{
+    margin: 15px;
     border-radius: 12px;
+    padding-top: 40px;
+    padding: 5px;
+}
+.cards section:hover{
+    box-shadow: 0em 0em 2em rgb(70, 109, 192);
 }
 .contact{
     width: 50%;

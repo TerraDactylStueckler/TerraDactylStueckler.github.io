@@ -7,7 +7,7 @@
         font-size: 3rem;
         padding-left: 10px;
     }
-
+    /*------NAVIGATION------*/
    
     nav ul.hide{
         display: block;
@@ -22,9 +22,9 @@
         padding: .6rem 1rem;
     }
     .stats{
-        position:absolute;
+        position:relative;
         margin-left: 3rem;
-        margin-top: -29rem;
+        margin-top: -25rem;
         background-color:  rgb(224, 158, 71);
         padding: 1.5rem;
         opacity: .8;
@@ -56,8 +56,18 @@
     .cards{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-
+        max-width: 64rem;
+        margin: 0 auto;
     }
+    .cards section{
+        display: block;
+        margin-top: 25px;
+    }
+    .cards section:hover{
+        box-shadow: 0em 0em 2em rgb(70, 109, 192);
+    }
+
+    /*------FOOTER------*/
     footer{
         width: 75rem;
     }
