@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1">
+        <meta name="description" content="A page to help you plan your events around the weather">
+        <title>Weather For Your Events</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/sunfavicon.ico">
+    </head>
+    <body> 
+        <header class="clearfix">
+            <img src="images/sun_cloud.png" alt="Sun and Cloud drawing">
+            <section>
+                <h1>Your Event's Weather</h1>
+                <div class="motto">We'll check the weather for <strong>YOU</strong>!</div>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul id="primaryNav" class="hide" >
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="clearfix">
+                <div class="taraweather">
+                    <picture class="respimg">
+                        <source media="(max-width: 500px)" srcset="images/landscape500.jpg">
+                        <source media="(max-width: 800px)" srcset="images/landscape800.jpg">        
+                        <img src="images/landscape1100.jpg" alt="Mountains & Lake">
+                    </picture>
+                    <section class="stats">
+                     <h3>Weather Summary</h3>
+                        <p>Current:<span id="temperature"> 40</span><br>High: 45<br>Low: 20<br>Wind Chill:<span id="chill">    
+                        </span><br>Wind Speed:<span id="speed"> 5</span></p>
+                    </section>
+                </div>
+            </div>  
+            <div class="cards" id="cards">
+
+            </div>
+            
+            <div class= "contact">
+                <figure class="clearfix">
+                    <img src="images/map.png" alt="Map of Preston, ID" width="200" height="220">
+                </figure>
+                <p><strong>Contact Us:</strong><br>
+                1185 Lincoln Ave<br>
+                youreventsweather.com<br>
+                1-800-867-5309</p>
+
+            </div>
+
+        </main>
+    <footer>
+        <p class="bottom"> &copy; 2021 |Tara Stueckler |</p>
+        <span id="lastUpdate"> Last Updated:</span>
+        <script src="js/js.js"></script>
+        <script src="js/button.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="js/town.js"></script>
+            
+    </footer>
+
+</body>
+</html>
