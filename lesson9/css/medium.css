@@ -84,17 +84,17 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 1em auto;
+        
     }
     .cards section:hover{
         box-shadow: 0em 0em 2em rgb(70, 109, 192);
     }
-    .cards section:nth-child(2) img{
+    .cards section:nth-child(odd) img{
         grid-column: 1;
-        grid-row: ;
     }
-    .cards section:nth-child(2)section{
+    .cards section:nth-child(odd)section{
         grid-column: 2;
-        
+        grid-row: 1;
     }
     .cards section #details{
         padding: 70px 0;
