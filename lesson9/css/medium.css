@@ -90,18 +90,24 @@
         box-shadow: 0em 0em 2em rgb(70, 109, 192);
     }
     .cards section:nth-child(odd) img{
-        grid-column: 1;
-    }
-    .cards section:nth-child(odd)section{
         grid-column: 2;
+    }
+    .cards section:nth-child(odd) #details{
+        grid-column: 1;
         grid-row: 1;
     }
     .cards section #details{
         padding: 70px 0;
         text-align: center;
     }
-    
-    
+    img{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    p{
+        padding: .75rem;
+    }
     /*----------- FOOTER --------------*/
         
     }
