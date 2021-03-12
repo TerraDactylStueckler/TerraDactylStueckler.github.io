@@ -196,11 +196,17 @@ figcaption{
 .cards h4{
     margin: 0.5em 0;
 }
+.cards img{
+    margin-top: 15px;
+    border-radius: 12px;
+}
 .cards section img{
     margin: 15px;
     border-radius: 12px;
     padding-top: 40px;
     padding: 5px;
+    width: 80%;
+    height: auto;
 }
 .cards section:hover{
     box-shadow: 0em 0em 2em rgb(70, 109, 192);
