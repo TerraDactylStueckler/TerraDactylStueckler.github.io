@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1">
+        <meta name="description" content="A page to help you plan your events around the weather">
+        <title>Weather For Your Events</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/sunfavicon.ico">
+    </head>
+    <body> 
+        <header class="clearfix">
+            <img src="images/sun_cloud.png" alt="Sun and Cloud drawing">
+            <section>
+                <h1>Your Event's Weather</h1>
+                <div class="motto">We'll check the weather for <strong>YOU</strong>!</div>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul id="primaryNav" class="hide" >
+                <li><a href="">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Storm Center</h1>
+            <form method="get" action="thanks.html">
+                    
+                <fieldset>
+                    <legend>Storm Watcher Information</legend>
+                    <label class="top">Full Name* <input type="text" name="fname" required></label> 
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="email@gmail.com" required></label>
+                    <label class="top">Zip Code* <input type="number" id="zip" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Report</legend>
+                    <div class="formdiv"></div>
+                        <label class="top">Date of Storm:
+                            <input type="date" name="stormDate">
+                        </label>
+                    <div class="formdiv">Storm Characteristics:</div>
+                        <label class="top"><select name="characteristics">
+                            <option value="">Please Select&#9662;</option>
+                            <option value="Flood">Flood</option>
+                            <option value="Hail">Hail</option>
+                            <option value="Hurricane">Hurricane</option>
+                            <option value="Thunderstorm">Thunderstorm</option>
+                            <option value="Tornado">Tornado</option></select>
+                            </label>
+                        
+                    <div class="formdiv">
+                           <label class="slider" for="rating">Storm Severity:<em>(slide to severity level)</em> &nbsp;&nbsp;&nbsp;
+                                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" >
+                            <span id="ratingvalue">2</span>
+                            <datalist id="tickmarks">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </datalist>
+                        </label>
+                    </div>
+                        <div class="formdiv">Storm Region:</div>
+                            <label class="top"> <select name="storm">
+                            <option value="">Please Select&#9662;</option>
+                            <option value="fishhaven">Fish Haven</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option></select>
+                        </label>
+                    <div class="formdiv">Are You in Danger?<em>(Choose one)</em>&nbsp;&nbsp;&nbsp;</div>
+                        <label class="selection"><input type="radio" name="danger" value="yes">Yes</label>
+                        <label class="selection"><input type="radio" name="danger" value="no">No</label>
+                        <label class="selection"><input type="radio" name="danger" value="maybe">Maybe</label>
+                        
+                </fieldset>   
+                <fieldset>
+                    <legend>Additional Comments</legend>
+                        <label>
+                            <textarea name="comments"  cols="100" rows="6" placeholder="Additional Information or comments:"></textarea>
+                        </label>
+                </fieldset>  
+                <input type="submit" value="Send Info" class="submitBtn">
+            </form>
+        </main>
+        <footer>
+            <p class="bottom"> &copy; 2021 |Tara Stueckler |</p>
+            <span id="lastUpdate"> Last Updated:</span>
+            <script src="js/js.js"></script>
+            <script src="js/button.js"></script>
+            <script src="js.slider.js"></script>
+        </footer>
+
+    </body>
+    </html>
