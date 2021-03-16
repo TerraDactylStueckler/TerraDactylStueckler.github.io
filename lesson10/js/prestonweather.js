@@ -11,7 +11,7 @@ weekday[4] = "Thursday";
 weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=b8bd845eed4e4fab1e047d161ebec271";
+const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=b8bd845eed4e4fab1e047d161ebec271";
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -25,13 +25,13 @@ let mylist = weatherInfo.list;
 
     for(i=0; i < mylist.length; i++){
         let time = mylist[i].dt_txt;
-        if (time.includes ('21:00:00')){
+        if (time.includes ('18:00:00')){
             
             forecastDayNumber +=1;
             if(forecastDayNumber ===7){
             forecastDayNumber = 0;}
 
-            let theDayName = document.createElement("span");
+            let theDayName = document.createElement("h4");
             theDayName.textContent = weekday[forecastDayNumber];
 
             let theTemp = document.createElement('p');
@@ -53,13 +53,20 @@ let mylist = weatherInfo.list;
     }
 });
 
-
-    //const temperature = document.querySelector('#current-temp');
-    //temperature.textContent = jsObject.main.temp;
-
-   // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-   // const desc = jsObject.weather[0].description;  // note how we reference the weather array
-   // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    //document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    //document.getElementById('icon').setAttribute('alt', desc);
- // });
+const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=b8bd845eed4e4fab1e047d161ebec271";
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((weatherInfo) => {
+        document.getElementById("speed").innerHTML = weatherInfo.wind.speed;
+        document.getElementById("humidity").innerHTML = weatherInfo.main.humidity;
+        document.getElementById("hightemp").innerHTML = weatherInfo.main.temp_max;
+        let current = `${weatherInfo.weather[0].description}, ${weatherInfo.main.temp}`;
+        document.getElementById("current").innerHTML = current.replace(/^\w/, (c) => c.toUpperCase());
+    
+        const temperature= parseFloat(document.getElementById("temperature").textContent);
+        const speed= parseFloat(document.getElementById("speed").textContent);
+        let windchill= 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * temperature * Math.pow(speed, 0.16));
+        windchill= Math.round(windchill);
+        if( temperature<=50 && speed > 3){document.getElementById("chill").textContent=windchill;}
+        else{document.getElementById("chill").textContent="0";} 
+    });
