@@ -58,6 +58,12 @@
     img.article{
         float: right;
     }
+    .divgallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maingallery{
+        max-width: 800px;
+    }
     .contact{
         display: grid;
        
