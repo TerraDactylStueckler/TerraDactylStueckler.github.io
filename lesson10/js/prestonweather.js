@@ -1,6 +1,9 @@
-const mydate = new Date();
+const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=b8bd845eed4e4fab1e047d161ebec271";
 
-const todayDayNumber = mydate.getDay();
+
+const d = new Date();
+
+const todayDayNumber = d.getDay();
 
 const weekday = new Array(7);
 weekday[0] = "Sunday";
@@ -11,7 +14,6 @@ weekday[4] = "Thursday";
 weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
-const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=b8bd845eed4e4fab1e047d161ebec271";
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -24,7 +26,7 @@ let mylist = weatherInfo.list;
     let forecastDayNumber = todayDayNumber;
 
     for(i=0; i < mylist.length; i++){
-        let time = mylist[i].dt_txt;
+        var time = mylist[i].dt_txt;
         if (time.includes ('18:00:00')){
             
             forecastDayNumber +=1;
