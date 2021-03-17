@@ -1,0 +1,107 @@
+@media only screen and (min-width: 43rem) {
+
+
+    /*----------- BODY --------------*/
+    
+    
+    
+    /*----------- HEADER --------------*/
+    header img{
+        width: auto;
+    
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header h2{
+        font-size: 1.5rem;
+    }
+    
+    
+    /*----------- NAVIGATION --------------*/
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav ul {margin-left: 2%;}
+        nav ul li {float: left;}
+    
+        nav ul li a{padding: .5rem 1rem;}
+        nav button{
+            display:none;
+        }
+    
+    
+    
+    /*----------- MAIN --------------*/
+    
+    
+    section.forecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    section.forecast div{
+        text-align: center;
+        border: 1px solid black;
+    }
+    section.forecast div h5{
+        background-color: rgb(141, 168, 226);
+        margin: 0;
+        padding: 1rem 0;
+    }
+    .fivedays{
+        width: 50%;
+        height: auto;
+    }
+    img.article{
+        float: right;
+    }
+    .contact{
+        display: grid;
+       
+    }
+    img.contact{
+        float:left;
+    }
+    /*------GALLERY------*/
+    .divgallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maingallery{
+        max-width: 800px;
+    }
+    /*------HOME PAGE------*/
+    .cards{
+        max-width: 700px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        padding: 7px;
+    }
+    .cards section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1em auto;
+    }
+    .cards section:hover{
+        box-shadow: 0em 0em 2em rgb(70, 109, 192);
+    }
+    .cards section:nth-child(2) img{
+        grid-column: 1;
+        grid-row: ;
+    }
+    .cards section:nth-child(2)section{
+        grid-column: 2;
+        
+    }
+    .cards section #details{
+        padding: 70px 0;
+        text-align: center;
+    }
+    
+    
+    /*----------- FOOTER --------------*/
+        
+    }
