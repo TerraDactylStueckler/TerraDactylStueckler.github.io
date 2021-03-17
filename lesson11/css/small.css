@@ -105,7 +105,7 @@ h3.stats{
     text-align: center;
 }
 h3{
-    margin-left: 100px;
+    margin-left: 90px;
     font-size: 30px;
 }
 .stats{
@@ -113,7 +113,7 @@ h3{
     padding: 1.5rem;
     opacity: .8;
     margin: 1rem;
-    padding: 1rem;
+    padding: .5rem;
     box-shadow: 2px 2px 5px black;
     font-size: 15pt;
 }
@@ -137,6 +137,8 @@ section.forecast{
 h3.forecast{
     display: none;
 }
+
+/*-----ARTICLE-----*/
 img.article{
     width: 35%;
     float: right;

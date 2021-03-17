@@ -24,7 +24,8 @@
     .stats{
         position:relative;
         margin-left: 3rem;
-        margin-top: -25rem;
+        margin-top: -30rem;
+        margin-right: 20rem;
         background-color:  rgb(224, 158, 71);
         padding: 1.5rem;
         opacity: .8;
