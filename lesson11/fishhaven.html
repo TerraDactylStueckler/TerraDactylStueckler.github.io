@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1">
+        <meta name="description" content="A page to help you plan your events around the weather">
+        <title>Weather For Your Events</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/sunfavicon.ico">
+    </head>
+    <body> 
+        <section id="message">
+            <h4>Coming Saturday!</h4>
+            <p>Preston Pancakes in the Park! 9 A.M. at the City Park Pavillion.</p>
+            <p>Come enjoy great food & fun! See you there.</p>
+      </section>
+        <header class="clearfix">
+            <img src="images/sun_cloud.png" alt="Sun and Cloud drawing">
+            <section>
+                <h1>Your Event's Weather</h1>
+                <div class="motto">We'll check the weather for <strong>YOU</strong>!</div>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul id="primaryNav" class="hide" >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Fish Haven, Idaho</h2>
+            <div class="clearfix">
+                <div class="taraweather">
+                    <picture class="respimg">
+                        <source media="(max-width: 500px)" srcset="images/landscape500.jpg">
+                        <source media="(max-width: 800px)" srcset="images/landscape800.jpg">        
+                        <img src="images/landscape1100.jpg" alt="Mountains & Lake">
+                    </picture>
+                    <div class="stats">
+                     <h3>Weather Summary</h3>
+                        <p>Current:<span id="temperature"></span>&deg;</p>
+                        <p>High:<span id="hightemp"></span>&deg;</p>
+                        <p>Wind Chill:<span id="chill"></span> </p>
+                        <p>Wind Speed:<span id="speed"></span>mph</p>
+                        <p>Humidity:<span id="humidity"></span>%</p>
+                    </div>
+                </div>
+            </div>  
+            <div class= "clearfix">
+                <h3>5 Day Forecast</h3>
+                <section class="forecast">
+                    <div class="forecastDays">
+                    </div>
+                </section>
+            </div>
+            
+                <div class= "article">
+                    <section>
+                        <h3>Interesting Article</h3>
+                         <figure>
+                             <img src="images/tentsandmountains.jpg" alt="Tents & Mountains" width="200" height="600">
+                         </figure>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                             mollit anim id est laborum.
+                             </p>
+                     </section>
+                </div>
+                <div class= "contact">
+                    <figure class="clearfix">
+                        <img src="images/map.png" alt="Map of Preston, ID" width="200" height="220">
+                    </figure>
+                    <p><strong>Contact Us:</strong><br>
+                    1185 Lincoln Ave<br>
+                    youreventsweather.com<br>
+                    1-800-867-5309</p>
+
+                </div>
+
+        </main>
+        <footer>
+            <p class="bottom"> &copy; 2021 |Tara Stueckler |</p>
+            <span id="lastUpdate"> Last Updated:</span>
+            <p> Weather Info from: <a href:"https://openweathermap.org/">OpenWeatherMap</a></p>
+            <script src="js/js.js"></script>
+            <script src="js/button.js"></script>
+            <script src="js/banner.js"></script>
+            <script src="js/windchill.js"></script>
+            <script src="js/prestonweather.js"></script>
+                
+        </footer>
+
+    </body>
+    </html>
