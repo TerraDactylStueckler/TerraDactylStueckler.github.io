@@ -102,7 +102,7 @@ section.hideme{
 }
 /*------WEATHER STATS------*/
 h3.stats{
-    text-align: center;
+    text-align: left;
 }
 h3{
     margin-left: 100px;
@@ -110,33 +110,40 @@ h3{
 }
 .stats{
     background-color:  rgb(224, 158, 71);
-    padding: 1.5rem;
     opacity: .8;
     margin: 1rem;
-    padding: 1rem;
+    padding: .5rem;
     box-shadow: 2px 2px 5px black;
-    font-size: 15pt;
+    font-size: 12pt;
+    height: 400px;
+    width: 500px;
 }
 p.stats{
     font-size: 1rem;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 p{
-    margin-left: 60px;
+    margin-left: 40px;
     margin-right: 20px;
-    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
 }
 /*------5 DAY FORECAST------*/
 .forecast{
+    display: grid;
+    grid-template-columns: 1fr;
     text-align: center;
     font-size: 2rem;
 }
 section.forecast{
     display: none;
 }
-h3.forecast{
+h3.forecast section {
     display: none;
 }
+
+/*-----ARTICLE-----*/
 img.article{
     width: 35%;
     float: right;
