@@ -1,8 +1,21 @@
-const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=b8bd845eed4e4fab1e047d161ebec271";
+const appID = "b8bd845eed4e4fab1e047d161ebec271";
+const prestonID = "5604473";
+const sodaSpringsID= "5607916";
+const fishHavenID = "5585000";
+let apiURL2 = `//api.openweathermap.org/data/2.5/weather?id=${prestonID}&units=imperial&appid=${appID}`;
+let apiURL = `//api.openweathermap.org/data/2.5/forecast?id=${prestonID}&units=imperial&appid=${appID}`;
 
+if (document.getElementById("townName").textContent == "Soda Springs"){
+    apiURL2 = `//api.openweathermap.org/data/2.5/weather?id=${sodaSpringsID}&units=imperial&appid=${appID}`;
+    apiURL = `//api.openweathermap.org/data/2.5/forecast?id=${sodaSpringsID}&units=imperial&appid=${appID}`;
+}
+if (document.getElementById("townName").textContent == "Fish Haven"){
+    apiURL2 = `//api.openweathermap.org/data/2.5/weather?id=${fishHavenID}&units=imperial&appid=${appID}`;
+    apiURL = `//api.openweathermap.org/data/2.5/forecast?id=${fishHavenID}&units=imperial&appid=${appID}`;
+}
 const d = new Date();
-
 const todayDayNumber = d.getDay();
+
 
 const weekday = new Array(7);
 weekday[0] = "Sunday";
@@ -18,7 +31,7 @@ fetch(apiURL)
 .then((weatherInfo) => {
   console.log(weatherInfo);
 
-  document.getElementById("townName").textContent = weatherInfo.city.name;
+ // document.getElementById("townName").textContent = weatherInfo.city.name;
 
   let mylist = weatherInfo.list;
   let forecastDayNumber = todayDayNumber;
@@ -52,8 +65,7 @@ fetch(apiURL)
   }
 });
 
-const apiURL2 =
-"//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=b8bd845eed4e4fab1e047d161ebec271";
+
 fetch(apiURL2)
 .then((response) => response.json())
 .then((weatherInfo) => {
