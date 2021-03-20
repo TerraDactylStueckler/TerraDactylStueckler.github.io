@@ -94,32 +94,41 @@ fetch(apiURL2)
   }
 });
 
-const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
- .then(function (response) {
-   return response.json();
- })
-   .then (function (jsonObject) {
-     const towns = jsonObject["towns"];
-     const event = document.querySelector(".events"); //writes the events to the div in document with id=events
-     console.log(towns);
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const towns = jsonObject['towns'];
+    const events = document.querySelector("events");
 
-     const townfilter = towns.filter((town) => town.name == "Preston");
-     townfilter.forEach((town) => {
-       let title = document.createElement("h2");
-       let eventadd = document.createElement("div");
+    for (let i = 0; i < towns.length; i++ ) {
+      if(towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs"){
+          
+          let name = document.createElement('h2');
+          let events = document.createElement('p');
+          let details = document.createElement('div');
 
-       title.innerHTML = town.name + ` Events`; //writes the h2 title
+           
+            name.textContent = towns[i].name;
+            events.textContent = towns[i].events;
 
-       let myevents = town.events;
-       for (i = 0; i < myevents.length; i++) {
-         let activity = document.createElement("li");
-         activity.innerHTML = `${town.events[i]}`
-         eventadd.append(activity);
-       };
-       event.append(title);
-       event.append(eventadd);
-     });
-   });
+            events.textContent = "Upcoming Events: " + towns[i].events;
+            
+            details.setAttribute('id', 'events');
+
+            //events.appendChild(events);
+            events.appendChild(details);
+
+            details.appendChild(name);
+            //details.appendChild(events);
+            
+
+            document.querySelector('div.events').appendChild(events);
+  }
+  }
+});
 

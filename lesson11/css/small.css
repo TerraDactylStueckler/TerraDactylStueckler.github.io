@@ -133,11 +133,7 @@ p{
     font-size: 25px;
 }
 /*------5 DAY FORECAST------*/
-.forecast{
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 80px;
-}
+
 section.forecast{
     display: none;
 }
