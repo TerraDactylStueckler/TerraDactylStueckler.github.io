@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1">
+        <meta name="description" content="Chamber of Commerce site for Lander, Wyoming">
+        <title>Enjoy Lander Wyoming</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Nunito&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/wyomingcowboy.ico">
+    </head>
+    <body>
+        <header>
+            <img src="images/tiger.jpg" alt="Bronze Tiger pouncing">
+            <section>
+                <h1>Chamber of Commerce</h1>
+                <h2>Lander Wyoming</h2>
+                <div class="motto">Home of the Cowboys</div>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul id="primaryNav" class="hide" >
+                <li><a href="chamber.html">Home</a></li>
+                <li><a href="lander.html">Lander</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <h1>Meet our Board Members</h1>
+                <ul>
+                    <li>Ellen Rigby</li>
+                    <li>Neo Anderson</li>
+                    <li>Rebelle West</li>
+                    <li>Pippilotta Delicatessa Windowshade</li>
+                    <li>Frodo Baggins</li>
+                </ul>
+                <p><strong>Lander Chamber of Commerce Contact:</strong></p>
+                    <p>(307)867-5309</p>
+                    <p>lchamberocommerce@gmail.com</p>
+            </div>
+            <h1>Contact Us</h1>
+            <form method="get" action="contactthanks.html">
+                    
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label> 
+                    <label class="top">Last Name* <input type="text" id="lname" required></label>
+                    <label class="top">Cell Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="email@gmail.com" required></label>
+                    
+                    
+                </fieldset>
+                <fieldset> 
+                    <legend>Comments or Concerns</legend>
+                        <label>
+                                <textarea name="comments"  cols="100" rows="6" placeholder="Please leave us your comments:"></textarea>
+                        </label>
+                </fieldset>
+                <input type="submit" value="Send Info" class="submitBtn">
+                <div>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11703.83332723179!2d-108.72714588847657!3d42.831493985058636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1617474256733!5m2!1sen!2sus"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                </form>
+        </main>
+        <footer>
+            <p class="bottom"> &copy; 2021 |Lander Chamber of Commerce|</p>
+            <span id="lastUpdate"> Last Updated:</span>
+            <script src="js/js.js"></script>
+            <script src="js/button.js"></script>
+            <div class="social">
+                <a href="https://www.facebook.com/"><img src="images/fb.png" alt="Facebook icon" width="50" height="50"></a>
+                <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube icon" width="50" height="50"></a>
+                <a href="https://www.instagram.com/"><img src="images/insta.png" alt="Instagram icon" width="50" height="50"></a>
+            </div>
+        </footer>
+    </body>
+    </html>

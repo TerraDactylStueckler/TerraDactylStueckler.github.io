@@ -1,0 +1,100 @@
+@media only screen and (min-width: 75rem) {
+
+    header, nav, main, footer {
+        margin:auto;
+    }
+    h1{
+        font-size: 3rem;
+        padding-left: 10px;
+    }
+    /*------NAVIGATION------*/
+   
+    nav ul.hide{
+        display: block;
+    }
+
+    nav ul li{
+        float:left;
+    }
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3) ;
+        padding: .6rem 1rem;
+    }
+
+     /*-----WEATHER-----*/
+     .stats{
+        position:relative;
+        margin-left: 3rem;
+        margin-top: 5rem;
+        background-color:  #207413;
+        padding: 1.5rem;
+        opacity: .8;
+        color: white;
+    }
+    #forecastDays{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    form label.sbs{
+        padding: .4rem 0;
+    }
+    /*-----ADVERTS-----*/
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 64rem;
+        margin: 0 auto;
+    }
+    .cards p{
+        text-align: left;
+        font-size: large;
+        justify-content: left;
+    }
+
+    .cards section{
+        display: block;
+        margin-top: 45px;
+    }
+    .cards section:hover{
+        box-shadow: 0em 0em 2em #207413;
+    }
+    /*------GALLERY------*/
+    .divgallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .divgallery figure{
+        margin: auto;
+    }
+    figcaption {
+        display: block;
+        text-align: center;
+      }
+      .gallery img:hover{
+         box-shadow: 0em 0em 2em green; 
+      }
+      .maingallery{
+          max-width: 1300px;
+      }
+    form label.sbs{
+        padding: .4rem 0;
+    }
+    /*------HOME PAGE------*/
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 64rem;
+        margin: 0 auto;
+    }
+    .cards section{
+        display: block;
+        margin-top: 45px;
+    }
+    .cards section:hover{
+        box-shadow: 0em 0em 2em rgb(70, 109, 192);
+    }
+    /*------FOOTER------*/
+    footer{
+        width: 95rem;
+    }
+}

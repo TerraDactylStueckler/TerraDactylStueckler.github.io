@@ -1,0 +1,60 @@
+{
+    "directory": [
+      
+        {
+            "name": "Bomgaars",
+            "hours": "Sunday-Saturday 7:30 AM to 8PM",
+            "address": "275 Grandview Drive",
+            "phone": "307-332-0417",
+            "website": "www.bomgaars.com",
+            "image": "images/bomgaars.jpg"
+        },
+          {
+            "name": "Gannett Grill",
+            "hours": "Sunday-Saturday 11AM to 9PM",
+            "address": "126 Main Street",
+            "phone": "307-332-8228",
+            "website": "www.landerbar.com",
+            "image": "images/gannettgrill.jpg"
+          },
+          {
+            "name": "The Good Place",
+            "hours": "Monday-Saturday 9AM to 5:30PM",
+            "address": "155 Main Street",
+            "phone": "307-332-3158",
+            "website": "",
+            "image": "images/goodplace.jpg"
+          },
+          {
+            "name": "Palace Pharmacy",
+            "hours": "Monday-Saturday 9AM to 6PM",
+            "address": "1255 Main Street",
+            "phone": "307-332-2270",
+            "website": "www.palacpharmacywy.com",
+            "image": "images/palace.jpg"
+          },
+          {
+            "name": "Wyoming Community Bank",
+            "hours": "Monday-Friday 9AM to 4PM",
+            "address": "685 Main Street",
+            "phone": "307-335-7233",
+            "website": "www.branchspot.com" ,
+            "image": "images/wybank.jpg"
+          },
+          {
+            "name": "Lander Valley Animal Hospital",
+            "hours": "Monday-Friday 8AM to 5PM",
+            "address": "1185 Hwy 287 North",
+            "phone": "307-332-3975",
+            "website": "www.landervalleyanimalhospital.com",
+            "image": "images/lvah.jpg"
+          },
+          {
+            "name": "National Outdoor Leadership School",
+            "hours": "Monday-Friday 8AM to 5PM",
+            "address": "284 Lincoln St.",
+            "phone": "(800)710-6657",
+            "website": "www.nols.edu",
+            "image": "images/nols.jpg"
+          }
+    ]}
