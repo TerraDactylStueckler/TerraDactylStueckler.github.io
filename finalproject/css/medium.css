@@ -23,9 +23,58 @@
         display:none;
     }
 
+ /*-----WEATHER-----*/
+ section.forecast{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+section.forecast div{
+    text-align: center;
+    border: 1px solid black;
+}
+section.forecast div h5{
+    background-color: rgb(141, 168, 226);
+    margin: 0;
+    padding: 1rem 0;
+}
 
 
-
+.cards{
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: 7px;
+}
+.cards section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1em auto;
+}
+.cards section:hover{
+    box-shadow: 0em 0em 2em rgb(70, 109, 192);
+}
+.cards section:nth-child(odd) img{
+    grid-column: 2;
+}
+.cards section:nth-child(odd) #details{
+    grid-column: 1;
+    grid-row: 1;
+}
+.cards section #details{
+    padding: 70px 0;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+p{
+    padding: .75rem;
+}
 
 
 

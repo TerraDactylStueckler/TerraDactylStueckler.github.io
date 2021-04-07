@@ -36,6 +36,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    
+    section.forecast{
+        margin-left: 400px;
+        margin-top: -350px;
+    }
     form label.sbs{
         padding: .4rem 0;
     }

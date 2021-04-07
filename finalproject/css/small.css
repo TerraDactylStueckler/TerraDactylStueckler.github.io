@@ -70,6 +70,7 @@ h2{
     text-align: center;
     font-size: 40px;
     color: white;
+    border-radius: 1rem;
 }
 
 /*div.taraweather{
@@ -90,9 +91,9 @@ main img {
     height: auto;
 }
 /*------WEATHER STATS------*/
+
 h3.stats{
     text-align: left;
-   
 }
 h3{
     margin-left: 50px;
@@ -107,9 +108,10 @@ h3{
     padding: .5rem;
     box-shadow: 2px 2px 5px black;
     font-size: 12pt;
-    height: 200px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     color: white;
+    border-radius: 1rem;
 }
 p.stats{
     font-size: 1rem;
@@ -130,7 +132,15 @@ section.forecast{
 }
 h3.forecast{
     display: none;
-   
+}
+section.forecast{
+    margin-left: 400px;
+    margin-top:10px;
+    margin-bottom: 60px;
+}
+h3.lforecast{
+    margin-left: 250px;
+    margin-top: 60px;
 }
 /*------GALLERY------*/
 .divgallery{
@@ -166,7 +176,6 @@ figcaption{
     grid-gap: 10px;
     margin: 0 auto;
     border-radius: 12px;
-    
     margin: 0 auto;
     margin-bottom: 1em ;
 }
@@ -185,8 +194,8 @@ figcaption{
 .cards h2{
     margin-top: 5px;
     margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
     background-color: #523528;
 }
 
@@ -255,12 +264,7 @@ form label.sbs input {
 form div.formdiv {
     margin: 10px 0 10px 0;
 }
-/*form label.selection{
-    display: block;
-    padding: .75rem 0;
-    color: #555;
-    margin: 3px;
-}*/
+
 form input.submitBtn{
     border: none;
     background-color: #207413;
@@ -281,7 +285,16 @@ form label.top input:required:valid{
 textarea{
     width: 96%;
 }
+/*-----LANDER PAGE-----*/
 
+.lstats{
+    padding: .5rem 1%;
+    background-color:  #523528;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    border-radius: 1rem;
+}
 
 footer{
     padding: .5rem 2%;
@@ -289,16 +302,6 @@ footer{
     text-align: center; 
     color: white;  
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .clearfix:after {
