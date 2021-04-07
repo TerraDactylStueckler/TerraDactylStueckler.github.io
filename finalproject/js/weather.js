@@ -1,9 +1,9 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=42.8330&lon=-108.7307&exclude=minutely,hourly,daily&units=imperial&appid=b8bd845eed4e4fab1e047d161ebec271";
+const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=42.8330&lon=-108.7307&exclude=minutely,hourly&units=imperial&appid=b8bd845eed4e4fab1e047d161ebec271";
 
 fetch(apiURL)
 const d = new Date();
 
-const todayDayNumber = d.getDay();
+const tDayNumber = d.getDay();
 
 const weekday = new Array(7);
 weekday[0] = "Sunday";
@@ -20,38 +20,29 @@ fetch(apiURL)
   .then((weatherInfo) => {
     console.log(weatherInfo);
 
-    document.getElementById("townName").textContent = weatherInfo.city.name;
-
-    let mylist = weatherInfo.list;
-  
-    let forecastDayNumber = todayDayNumber;
-
-    for (i = 0; i < mylist.length; i++) {
-      var time = mylist[i].dt_txt;
-      if (time.includes("18:00:00")) {
-        forecastDayNumber += 1;
-        if (forecastDayNumber === 7) {
-          forecastDayNumber = 0;
-        }
+    //let mydaily = weatherInfo.daily;
+    //console.log(mydaily)
+    
+    for (i = 1; i < 4; i++) {
 
         let theDayName = document.createElement("h4");
-        theDayName.textContent = weekday[forecastDayNumber];
+        theDayName.textContent = weekday[tDayNumber +i];
 
         let theTemp = document.createElement("p");
-        theTemp.innerHTML = weatherInfo.list[i].current.temp + "ºF";
+        theTemp.innerHTML = weatherInfo.daily[i].temp.day + "ºF";
 
-        let iconcode = weatherInfo.list[i].weather[0].icon;
+        let iconcode = weatherInfo.daily[i].weather[0].icon;
         let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
         let theIcon = document.createElement("img");
         theIcon.src = iconPath;
-        theIcon.alt = `Icon image of ${weatherInfo.list[i].weather[0].description}`;
+        theIcon.alt = `Icon image of ${weatherInfo.daily[i].weather[0].description}`;
 
         let theDay = document.createElement("div");
         theDay.appendChild(theDayName);
         theDay.appendChild(theIcon);
         theDay.appendChild(theTemp);
         document.getElementById("forecastDays").appendChild(theDay);
-      }
+      
     }
   });
 
@@ -67,6 +58,3 @@ fetch(apiURL2)
   );
   
 });
-
-
-
